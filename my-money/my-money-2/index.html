@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Banco MyMoney</title>
+        <!-- link para o BootStrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+        <header class="bg-danger p-4">
+           <h1 class="display-4 text-light">MyMoney</h1>
+        </header>
+
+        <div class="container-fluid">
+            <section class="my-4 mx-1">
+                <h2>Resumo Consolidado</h2>
+                <table id="resumo" class="table table-hover  text-center">
+                    <thead class="thead-dark">
+                        <tr id="cabecalho">
+                            <th class="nome-cliente">Cliente</th>
+                            <th class="tipo-operacao">Operação</th>
+                            <th class="valor-credito">Valor Creditado</th>
+                            <th class="saldo-anterior">Saldo Anterior</th>
+                            <th class="saldo-atual">Saldo Atualizado</th>
+                        </tr>
+                    </thead>
+                    <tbody class="historico">
+                        <tr class="operacao">
+                            <td class="nome-cliente">Eu</td>
+                            <td class="tipo-operacao">DOC</td>
+                            <td class="valor-credito">1000.00</td>
+                            <td class="saldo-anterior">2000.00</td>
+                            <td class="saldo-atual">0</td>
+                        </tr>
+
+                        <tr class="operacao">
+                            <td class="nome-cliente">Tu</td>
+                            <td class="tipo-operacao">TED</td>
+                            <td class="valor-credito">2000.00</td>
+                            <td class="saldo-anterior">1000.00</td>
+                            <td class="saldo-atual">0</td>
+                        </tr>
+
+                        <tr class="operacao">
+                            <td class="nome-cliente">Ele</td>
+                            <td class="tipo-operacao">TED</td>
+                            <td class="valor-credito">1500.00</td>
+                            <td class="saldo-anterior">2500.00</td>
+                            <td class="saldo-atual">0</td>
+                        </tr>
+
+                        <tr class="operacao">
+                            <td class="nome-cliente">Nós</td>
+                            <td class="tipo-operacao">Depósito</td>
+                            <td class="valor-credito">2000.00</td>
+                            <td class="saldo-anterior">4000.00</td>
+                            <td class="saldo-atual">0</td>
+                        </tr>
+
+                        <tr class="operacao">
+                            <td class="nome-cliente">Vós</td>
+                            <td class="tipo-operacao">Depósito</td>
+                            <td class="valor-credito">3000.00</td>
+                            <td class="saldo-anterior">1000.00</td>
+                            <td class="saldo-atual">0</td>
+                        </tr>
+
+                        <tr class="operacao">
+                            <td class="nome-cliente">Eles</td>
+                            <td class="tipo-operacao">TED</td>
+                            <td class="valor-credito">2800.00</td>
+                            <td class="saldo-anterior">3800.00</td>
+                            <td class="saldo-atual">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>  
+            <div id="dados" class="bg-info my-3 p-4"></div>      
+        </div>
+     
+        <!-- <script src="./js/inserirDados.js"></script> -->
+        <script src="./js/atualizarSaldo.js"></script>
+    </body>
+
+</html> 
